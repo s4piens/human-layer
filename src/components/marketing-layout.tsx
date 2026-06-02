@@ -1,6 +1,7 @@
 import { ReactNode } from "react";
 import { LangProvider } from "@/app/(marketing)/_components/lang-context";
 import { MarketingHeader } from "@/app/(marketing)/_components/marketing-header";
+import { PostHogProvider } from "@/app/(marketing)/_components/posthog-provider";
 
 const HumanLayerMark = () => (
   <svg width="26" height="26" viewBox="0 0 28 28" fill="none" aria-hidden="true">
@@ -12,6 +13,7 @@ const HumanLayerMark = () => (
 
 export function MarketingLayout({ children }: { children: ReactNode }) {
   return (
+    <PostHogProvider>
     <LangProvider>
       <div className="mkt" style={{ minHeight: "100vh", display: "flex", flexDirection: "column", overflowX: "hidden" }}>
         <MarketingHeader />
@@ -56,5 +58,6 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
         </footer>
       </div>
     </LangProvider>
+    </PostHogProvider>
   );
 }
