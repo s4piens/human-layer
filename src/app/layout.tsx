@@ -25,7 +25,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Human Layer",
+  title: "MergeProof",
   description: "AI-assisted pull request review for teams that care about clarity and velocity.",
 };
 

@@ -24,7 +24,7 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
               <div>
                 <a href="#top" style={{ display: "flex", alignItems: "center", gap: 11, fontWeight: 600, letterSpacing: "-0.02em", fontSize: "1.02rem", color: "var(--mkt-text)", marginBottom: 14 }}>
                   <HumanLayerMark />
-                  <span>Human Layer</span>
+                  <span>MergeProof</span>
                 </a>
                 <p style={{ color: "var(--mkt-text3)", fontSize: ".9rem", maxWidth: "30ch", lineHeight: 1.5 }}>
                   La couche de revue humaine avant le merge, pour les équipes qui livrent avec l&apos;IA.
@@ -45,13 +45,13 @@ export function MarketingLayout({ children }: { children: ReactNode }) {
                 </div>
                 <div>
                   <h5 style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".7rem", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--mkt-text3)", marginBottom: 16 }}>Contact</h5>
-                  <a href="mailto:hello@humanlayer.dev" style={{ display: "block", color: "var(--mkt-text2)", fontSize: ".92rem", marginBottom: 10 }}>hello@humanlayer.dev</a>
+                  <a href="mailto:hello@mergeproof.dev" style={{ display: "block", color: "var(--mkt-text2)", fontSize: ".92rem", marginBottom: 10 }}>hello@mergeproof.dev</a>
                   <a href="#contact" style={{ display: "block", color: "var(--mkt-text2)", fontSize: ".92rem", marginBottom: 10 }}>Demander un accès</a>
                 </div>
               </div>
             </div>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", gap: 20, marginTop: 50, paddingTop: 26, borderTop: "1px solid var(--mkt-border)", flexWrap: "wrap" }}>
-              <span style={{ color: "var(--mkt-text3)", fontSize: ".84rem", fontFamily: "var(--font-jetbrains), monospace" }}>© 2026 Human Layer</span>
+              <span style={{ color: "var(--mkt-text3)", fontSize: ".84rem", fontFamily: "var(--font-jetbrains), monospace" }}>© 2026 MergeProof</span>
               <span style={{ color: "var(--mkt-text3)", fontSize: ".84rem", fontFamily: "var(--font-jetbrains), monospace" }}>Early access · concierge mode</span>
             </div>
           </div>

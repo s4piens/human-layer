@@ -89,8 +89,8 @@ export default function HomePage() {
           </h1>
           <p style={{ fontSize: "clamp(1.1rem,1.9vw,1.4rem)", color: "var(--mkt-text2)", marginTop: 26, maxWidth: "46ch", lineHeight: 1.5 }}>
             <T
-              fr="Human Layer ajoute une couche de validation humaine sur vos merge requests à risque — en particulier celles écrites avec de l'IA. Vous livrez vite, sans relâcher la qualité."
-              en="Human Layer adds a layer of human validation on your high-risk merge requests — especially the ones written with AI. You ship fast, without letting quality slip."
+              fr="MergeProof ajoute une couche de validation humaine sur vos merge requests à risque — en particulier celles écrites avec de l'IA. Vous livrez vite, sans relâcher la qualité."
+              en="MergeProof adds a layer of human validation on your high-risk merge requests — especially the ones written with AI. You ship fast, without letting quality slip."
             />
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 13, marginTop: 36 }}>
@@ -135,8 +135,8 @@ export default function HomePage() {
             <span className="mkt-eyebrow"><T fr="La solution" en="The solution" /></span>
             <h2 style={{ fontSize: "clamp(2.1rem,4vw,3.4rem)", fontWeight: 500, lineHeight: 1.12, letterSpacing: "-0.03em", margin: "22px 0 0" }}>
               <T
-                fr={<><span style={{ color: "var(--mkt-text)" }}>Human Layer est la couche de confiance qui s&apos;intercale entre votre CI et votre merge.</span> <span style={{ color: "var(--mkt-text3)" }}>Un humain regarde ce que les tests ne voient pas — et tranche.</span></>}
-                en={<><span style={{ color: "var(--mkt-text)" }}>Human Layer is the trust layer that sits between your CI and your merge.</span> <span style={{ color: "var(--mkt-text3)" }}>A human looks at what tests can&apos;t see — and decides.</span></>}
+                fr={<><span style={{ color: "var(--mkt-text)" }}>MergeProof est la couche de confiance qui s&apos;intercale entre votre CI et votre merge.</span> <span style={{ color: "var(--mkt-text3)" }}>Un humain regarde ce que les tests ne voient pas — et tranche.</span></>}
+                en={<><span style={{ color: "var(--mkt-text)" }}>MergeProof is the trust layer that sits between your CI and your merge.</span> <span style={{ color: "var(--mkt-text3)" }}>A human looks at what tests can&apos;t see — and decides.</span></>}
               />
             </h2>
           </Reveal>
@@ -160,16 +160,16 @@ export default function HomePage() {
         <SectionHead
           eyebrowFr="Comment ça marche" eyebrowEn="How it works"
           titleFr="Trois étapes. Aucun changement dans vos habitudes." titleEn="Three steps. Nothing changes in your habits."
-          leadFr="Human Layer se branche sur votre flux existant. Vous gardez votre repo, vos outils et le dernier mot."
-          leadEn="Human Layer plugs into your existing flow. You keep your repo, your tools, and the final say."
+          leadFr="MergeProof se branche sur votre flux existant. Vous gardez votre repo, vos outils et le dernier mot."
+          leadEn="MergeProof plugs into your existing flow. You keep your repo, your tools, and the final say."
         />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: 0, marginTop: 56, border: "1px solid var(--mkt-border)", borderRadius: 16, overflow: "hidden" }} className="grid-steps-resp">
           {[
             {
               stepFr: "Étape 01", stepEn: "Step 01", delay: 0,
               titleFr: "Vous signalez la MR", titleEn: "You flag the MR",
-              descFr: "Un label, une règle ou un clic. Les MR à risque ou écrites par un agent sont routées vers Human Layer, le reste passe normalement.",
-              descEn: "A label, a rule, or a click. High-risk or agent-written MRs are routed to Human Layer; everything else passes as usual.",
+              descFr: "Un label, une règle ou un clic. Les MR à risque ou écrites par un agent sont routées vers MergeProof, le reste passe normalement.",
+              descEn: "A label, a rule, or a click. High-risk or agent-written MRs are routed to MergeProof; everything else passes as usual.",
               icon: <svg width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M10 2v6m0 0L7 5m3 3l3-3M4 12v3a1 1 0 001 1h10a1 1 0 001-1v-3" stroke="var(--mkt-accent)" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>,
             },
             {
@@ -205,8 +205,8 @@ export default function HomePage() {
         <SectionHead
           eyebrowFr="Ce qui est validé" eyebrowEn="What we review"
           titleFr="Là où les tests s'arrêtent, la revue commence." titleEn="Where tests stop, review begins."
-          leadFr="La CI dit si le code passe. Human Layer dit s'il fallait vraiment l'écrire comme ça."
-          leadEn="CI tells you if the code passes. Human Layer tells you whether it should have been written that way."
+          leadFr="La CI dit si le code passe. MergeProof dit s'il fallait vraiment l'écrire comme ça."
+          leadEn="CI tells you if the code passes. MergeProof tells you whether it should have been written that way."
         />
         <div style={{ display: "grid", gridTemplateColumns: "repeat(2,1fr)", gap: 0, marginTop: 56, borderTop: "1px solid var(--mkt-border)" }} className="grid-2-resp">
           {[
@@ -279,7 +279,7 @@ export default function HomePage() {
           />
           <div style={{ display: "grid", gridTemplateColumns: "repeat(3,1fr)", gap: "36px 40px", marginTop: 56 }} className="grid-3-resp">
             {[
-              { frTitle: "Vous gardez le dernier mot", enTitle: "You keep the final say", frDesc: "Human Layer recommande et argumente. La décision de merger reste toujours la vôtre — rien n'est automatique.", enDesc: "Human Layer recommends and argues its case. The decision to merge always stays yours — nothing is automatic.", icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2l5 2.5V8c0 3-2 5-5 6-3-1-5-3-5-6V4.5L8 2z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/></svg>, delay: 0 },
+              { frTitle: "Vous gardez le dernier mot", enTitle: "You keep the final say", frDesc: "MergeProof recommande et argumente. La décision de merger reste toujours la vôtre — rien n'est automatique.", enDesc: "MergeProof recommends and argues its case. The decision to merge always stays yours — nothing is automatic.", icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 2l5 2.5V8c0 3-2 5-5 6-3-1-5-3-5-6V4.5L8 2z" stroke="currentColor" strokeWidth="1.3" strokeLinejoin="round"/></svg>, delay: 0 },
               { frTitle: "Périmètre d'accès minimal", enTitle: "Minimal access scope", frDesc: "On n'accède qu'à ce qui est nécessaire pour reviewer. Pas de stockage de votre code au-delà de la revue en cours.", enDesc: "We access only what's needed to review. No storage of your code beyond the review in progress.", icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="3" y="7" width="10" height="6.5" rx="1.5" stroke="currentColor" strokeWidth="1.3"/><path d="M5.5 7V5a2.5 2.5 0 015 0v2" stroke="currentColor" strokeWidth="1.3"/></svg>, delay: 80 },
               { frTitle: "Des humains identifiables", enTitle: "Identifiable humans", frDesc: "Chaque review porte un nom et un raisonnement. Vous pouvez challenger un verdict et en discuter, comme avec un collègue.", enDesc: "Every review carries a name and a rationale. You can challenge a verdict and discuss it, like with a colleague.", icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><circle cx="8" cy="8" r="6" stroke="currentColor" strokeWidth="1.3"/><path d="M8 5v3.5M8 11h.01" stroke="currentColor" strokeWidth="1.4" strokeLinecap="round"/></svg>, delay: 160 },
               { frTitle: "Process transparent", enTitle: "Transparent process", frDesc: "Vous voyez ce qui a été vérifié, pourquoi, et ce qui a été flaggé. Aucune boîte noire.", enDesc: "You see what was checked, why, and what was flagged. No black box.", icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h2l1.5 4 3-8L13 8h0" stroke="currentColor" strokeWidth="1.3" strokeLinecap="round" strokeLinejoin="round"/></svg>, delay: 0 },
@@ -303,8 +303,8 @@ export default function HomePage() {
         <SectionHead
           eyebrowFr="Tarifs" eyebrowEn="Pricing"
           titleFr="Un pilote avant tout engagement." titleEn="A pilot before any commitment."
-          leadFr="Human Layer est en accès anticipé. On commence par un pilote cadré sur vos vraies MR, puis on définit ensemble un tarif adapté à votre volume — sans licence annuelle imposée."
-          leadEn="Human Layer is in early access. We start with a scoped pilot on your real MRs, then set a price tailored to your volume together — no annual lock-in."
+          leadFr="MergeProof est en accès anticipé. On commence par un pilote cadré sur vos vraies MR, puis on définit ensemble un tarif adapté à votre volume — sans licence annuelle imposée."
+          leadEn="MergeProof is in early access. We start with a scoped pilot on your real MRs, then set a price tailored to your volume together — no annual lock-in."
         />
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 18, marginTop: 56 }} className="grid-2-resp">
           {/* Pilot */}
@@ -312,7 +312,7 @@ export default function HomePage() {
             <div style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".72rem", letterSpacing: ".14em", textTransform: "uppercase", color: "var(--mkt-text3)" }}><T fr="Pilote" en="Pilot" /></div>
             <h3 style={{ fontSize: "1.4rem", marginTop: 13, fontWeight: 600, letterSpacing: "-0.02em" }}><T fr="Tester sur de vraies MR" en="Test it on real MRs" /></h3>
             <div style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: "1.02rem", color: "var(--mkt-text)", marginTop: 18 }}><T fr="Engagement cadré" en="Scoped engagement" /></div>
-            <p style={{ color: "var(--mkt-text2)", marginTop: 10, fontSize: ".95rem", lineHeight: 1.55, flex: 1 }}><T fr="Un pilote court et cadré pour voir Human Layer à l'œuvre sur vos propres merge requests, avant tout engagement." en="A short, fixed-scope pilot to see Human Layer at work on your own merge requests, before any commitment." /></p>
+            <p style={{ color: "var(--mkt-text2)", marginTop: 10, fontSize: ".95rem", lineHeight: 1.55, flex: 1 }}><T fr="Un pilote court et cadré pour voir MergeProof à l'œuvre sur vos propres merge requests, avant tout engagement." en="A short, fixed-scope pilot to see MergeProof at work on your own merge requests, before any commitment." /></p>
             <ul style={{ listStyle: "none", marginTop: 24, display: "flex", flexDirection: "column", gap: 12 }}>
               {[
                 { fr: "Un lot de MR à risque, reviewées à la main.", en: "A batch of high-risk MRs, reviewed by hand." },
@@ -378,12 +378,12 @@ export default function HomePage() {
           </h2>
           <p style={{ color: "var(--mkt-text2)", marginTop: 20, maxWidth: "46ch", marginLeft: "auto", marginRight: "auto", position: "relative", fontSize: "1.08rem" }}>
             <T
-              fr="On ouvre l'accès à un petit nombre d'équipes. Décrivez votre flux de merge — on évalue ensemble si Human Layer peut vous aider dès cette semaine."
-              en="We're opening access to a small number of teams. Describe your merge flow — we'll figure out together whether Human Layer can help you as soon as this week."
+              fr="On ouvre l'accès à un petit nombre d'équipes. Décrivez votre flux de merge — on évalue ensemble si MergeProof peut vous aider dès cette semaine."
+              en="We're opening access to a small number of teams. Describe your merge flow — we'll figure out together whether MergeProof can help you as soon as this week."
             />
           </p>
           <div style={{ display: "flex", flexWrap: "wrap", gap: 13, marginTop: 36, justifyContent: "center", position: "relative" }}>
-            <BtnPrimary href="mailto:hello@humanlayer.dev" fr="Demander un accès" en="Request access" />
+            <BtnPrimary href="mailto:hello@mergeproof.dev" fr="Demander un accès" en="Request access" />
             <BtnGhost href="#fonctionnement" fr="Revoir le fonctionnement" en="Review how it works" />
           </div>
         </Reveal>
@@ -400,12 +400,12 @@ export default function HomePage() {
             </h2>
             <p style={{ color: "var(--mkt-text2)", marginTop: 20, fontSize: "1.05rem", lineHeight: 1.55, maxWidth: "40ch" }}>
               <T
-                fr="Human Layer repose sur de vrais reviewers humains — des ingénieurs seniors sélectionnés avec soin. Les missions sont rémunérées, et vous choisissez votre charge."
-                en="Human Layer runs on real human reviewers — carefully selected senior engineers. Assignments are paid, and you choose your own load."
+                fr="MergeProof repose sur de vrais reviewers humains — des ingénieurs seniors sélectionnés avec soin. Les missions sont rémunérées, et vous choisissez votre charge."
+                en="MergeProof runs on real human reviewers — carefully selected senior engineers. Assignments are paid, and you choose your own load."
               />
             </p>
             <div style={{ display: "flex", flexWrap: "wrap", gap: 13, marginTop: 30 }}>
-              <BtnPrimary href="mailto:reviewers@humanlayer.dev" fr="Postuler comme reviewer" en="Apply as a reviewer" />
+              <BtnPrimary href="mailto:reviewers@mergeproof.dev" fr="Postuler comme reviewer" en="Apply as a reviewer" />
             </div>
           </div>
           <div style={{ padding: "clamp(40px,5vw,62px)", borderLeft: "1px solid var(--mkt-border)", position: "relative", zIndex: 1, display: "flex", flexDirection: "column", gap: 26, justifyContent: "center" }} className="rvp-right-resp">

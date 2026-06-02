@@ -53,7 +53,7 @@ export function MarketingHeader() {
         <nav style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 68, maxWidth: 1140, margin: "0 auto", padding: "0 28px" }}>
           <Link href="#top" style={{ display: "flex", alignItems: "center", gap: 11, fontWeight: 600, letterSpacing: "-0.02em", fontSize: "1.02rem", color: "var(--mkt-text)" }}>
             <HumanLayerMark />
-            <span>Human Layer</span>
+            <span>MergeProof</span>
           </Link>
 
           <div className="nav-links-desktop" style={{ display: "flex", alignItems: "center", gap: 30 }}>

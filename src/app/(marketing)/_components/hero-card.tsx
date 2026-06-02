@@ -66,7 +66,7 @@ export function HeroCard() {
         <div style={{ display: "flex", gap: 7 }}>
           {[0,1,2].map(i => <i key={i} style={{ width: 11, height: 11, borderRadius: "50%", background: "var(--mkt-surface2)", display: "block" }}/>)}
         </div>
-        <span style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".8rem", color: "var(--mkt-text3)", marginLeft: 4 }}>human-layer · review</span>
+        <span style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".8rem", color: "var(--mkt-text3)", marginLeft: 4 }}>mergeproof · review</span>
         <span style={{ marginLeft: "auto", fontFamily: "var(--font-jetbrains), monospace", fontSize: ".7rem", letterSpacing: ".05em", color: "var(--mkt-accent)", border: "1px solid var(--mkt-asoft)", background: "var(--mkt-asoft)", padding: ".3em .7em", borderRadius: 6 }}>AI-assisted MR</span>
       </div>
 
@@ -118,7 +118,7 @@ export function HeroCard() {
         <div style={{ padding: "24px", display: "flex", flexDirection: "column", justifyContent: "space-between", gap: 20 }}>
           <div style={{ opacity: verdictShown ? 1 : 0, transform: verdictShown ? "scale(1)" : "scale(.96)", transition: "opacity .5s var(--ease), transform .5s var(--ease)" }}>
             <div style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".7rem", letterSpacing: ".12em", textTransform: "uppercase", color: "var(--mkt-text3)" }}>
-              {lang === "en" ? "Human Layer verdict" : "Verdict Human Layer"}
+              {lang === "en" ? "MergeProof verdict" : "Verdict MergeProof"}
             </div>
             <div style={{ display: "inline-flex", alignItems: "center", gap: 9, marginTop: 14, fontSize: "1.18rem", fontWeight: 600, letterSpacing: "-0.01em", color: "var(--mkt-warn)" }}>
               <span style={{ width: 11, height: 11, borderRadius: "50%", background: "var(--mkt-warn)", boxShadow: "0 0 0 4px oklch(0.80 0.11 78 / 0.18)", display: "inline-block" }}/>
@@ -134,7 +134,7 @@ export function HeroCard() {
           <div style={{ display: "flex", alignItems: "center", gap: 11, paddingTop: 18, borderTop: "1px solid var(--mkt-border)" }}>
             <div style={{ width: 32, height: 32, borderRadius: "50%", background: "linear-gradient(135deg, var(--mkt-accent), oklch(0.66 0.10 232))", flexShrink: 0 }}/>
             <div>
-              <div style={{ fontSize: ".86rem", fontWeight: 500 }}>{lang === "en" ? "Human Layer reviewer" : "Reviewer Human Layer"}</div>
+              <div style={{ fontSize: ".86rem", fontWeight: 500 }}>{lang === "en" ? "MergeProof reviewer" : "Reviewer MergeProof"}</div>
               <div style={{ fontFamily: "var(--font-jetbrains), monospace", fontSize: ".7rem", color: "var(--mkt-text3)" }}>senior backend · 12 min</div>
             </div>
           </div>
